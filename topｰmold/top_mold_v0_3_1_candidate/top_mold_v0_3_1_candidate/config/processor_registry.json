@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "processors": [
+    {"id":"PROC-001","version":"1.0.0","status":"active","capabilities":["analyze"],"accepts":["text"],"produces":["analysis_packet"],"execution_mode":"local","priority":100,"adapter_id":"local-demo","entrypoint":"not_invoked"},
+    {"id":"PROC-002","version":"1.0.0","status":"active","capabilities":["summarize"],"accepts":["analysis_packet"],"produces":["summary"],"execution_mode":"local","priority":100,"adapter_id":"local-demo","entrypoint":"not_invoked"},
+    {"id":"PROC-003","version":"1.0.0","status":"active","capabilities":["validate"],"accepts":["summary"],"produces":["validated_summary"],"execution_mode":"local","priority":100,"adapter_id":"local-demo","entrypoint":"not_invoked"},
+    {"id":"PROC-004","version":"1.0.0","status":"active","capabilities":["analyze"],"accepts":["text"],"produces":["analysis_packet"],"execution_mode":"manual","priority":50,"adapter_id":"manual-handoff","entrypoint":"not_invoked"},
+    {"id":"PROC-005","version":"1.0.0","status":"disabled","capabilities":["summarize"],"accepts":["analysis_packet"],"produces":["summary"],"execution_mode":"local","priority":1000,"adapter_id":"disabled-demo","entrypoint":"not_invoked"}
+  ]
+}

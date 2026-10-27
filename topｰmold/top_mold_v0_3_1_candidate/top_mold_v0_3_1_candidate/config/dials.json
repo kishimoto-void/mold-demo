@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "dials": [
+    {"id":"D-001","name":"回答の詳しさ","description":"Concise to detailed answers","advanced":false},
+    {"id":"D-002","name":"構造化","description":"Loose prose to strongly structured output","advanced":false},
+    {"id":"D-003","name":"検証の丁寧さ","description":"Light checking to explicit verification","advanced":false},
+    {"id":"D-004","name":"批判的検討","description":"Supportive to stronger counterargument checks","advanced":false},
+    {"id":"D-005","name":"提案の積極性","description":"Reactive to proactive suggestions","advanced":false},
+    {"id":"D-006","name":"不確実性の明示","description":"Implicit uncertainty to explicit confidence and limits","advanced":false},
+    {"id":"D-007","name":"専門用語の量","description":"Plain language to domain terminology","advanced":false},
+    {"id":"D-008","name":"確認・相談の頻度","description":"Proceed with safe assumptions to ask more often","advanced":false},
+    {"id":"D-009","name":"事実と仮説の分離","description":"Explicitly label observations, inferences, and hypotheses","advanced":true},
+    {"id":"D-010","name":"反対意見の検討","description":"Seek alternative explanations and counterarguments","advanced":true},
+    {"id":"D-011","name":"矛盾チェック","description":"Check for contradictions across requirements and outputs","advanced":true},
+    {"id":"D-012","name":"文脈の引き継ぎ","description":"Preserve relevant context across steps","advanced":true},
+    {"id":"D-013","name":"再試行の積極性","description":"Suggest safe recovery and retry routes","advanced":true}
+  ]
+}

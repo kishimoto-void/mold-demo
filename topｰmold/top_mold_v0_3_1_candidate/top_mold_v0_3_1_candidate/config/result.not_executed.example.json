@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "result_id": "RESULT-NOT-EXECUTED-001",
+  "task_id": "TASK-EXAMPLE-001",
+  "processor_id": "PROC-NONE",
+  "processor_version": "0.0.0",
+  "execution_status": "NOT_INVOKED",
+  "result_status": "NOT_EXECUTED",
+  "output_types": [],
+  "outputs": {},
+  "evidence_refs": [],
+  "assumptions": [],
+  "unresolved_items": [],
+  "verification": {"status":"NOT_RUN","checks":[]},
+  "note": "This is a sentinel example, not an execution result."
+}

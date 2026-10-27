@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "molds": [
+    {
+      "id": "MOLD-000",
+      "name": "Mold Contract",
+      "version": "0.1.0",
+      "status": "draft"
+    },
+    {
+      "id": "MOLD-001",
+      "name": "Mold Registry",
+      "version": "0.1.0",
+      "status": "demo"
+    },
+    {
+      "id": "MOLD-002",
+      "name": "Mold Connector",
+      "version": "0.1.0",
+      "status": "draft"
+    },
+    {
+      "id": "MOLD-003",
+      "name": "Request Intake",
+      "version": "0.3.1",
+      "status": "demo"
+    },
+    {
+      "id": "MOLD-004",
+      "name": "Capability Planner",
+      "version": "0.3.1",
+      "status": "demo"
+    },
+    {
+      "id": "MOLD-005",
+      "name": "Personalization Overlay",
+      "version": "0.3.1",
+      "status": "demo"
+    },
+    {
+      "id": "MOLD-006",
+      "name": "Trace Record Builder",
+      "version": "0.3.1",
+      "status": "demo"
+    },
+    {
+      "id": "MOLD-007",
+      "name": "Result Envelope Validator",
+      "version": "0.3.1",
+      "status": "demo"
+    }
+  ]
+}

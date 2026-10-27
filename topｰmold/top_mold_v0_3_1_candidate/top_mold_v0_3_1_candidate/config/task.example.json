@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "task_id": "TASK-EXAMPLE-001",
+  "goal": "Create a checked summary from a text input",
+  "input_types": ["text"],
+  "required_capabilities": ["analyze", "summarize", "validate"],
+  "output_contract": {"required_types": ["validated_summary"]},
+  "constraints": [],
+  "policy": {"forbidden_execution_modes": ["external_api"], "approval_required": false, "approval_granted": false},
+  "risk_level": "low",
+  "context_refs": []
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": "persona-seed/v0.4.0",
+  "seed_id": "persona-seed-example",
+  "communication_style": {"tone":"casual_yet_insightful","format":"structured","verbosity":"adaptive"},
+  "support_strategy": {"ask_when_material":true,"separate_fact_hypothesis_unknown":true},
+  "privacy": {"use_only_task_relevant_fields":true,"do_not_infer_real_identity":true},
+  "note": "Example only. A Persona Seed is a preference declaration, not an authority or capability grant."
+}

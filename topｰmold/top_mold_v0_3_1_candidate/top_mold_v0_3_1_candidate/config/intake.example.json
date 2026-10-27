@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "task_id": "TASK-INTAKE-EXAMPLE-001",
+  "raw_request": "この文章を整理し、要点を確認して要約してほしい。",
+  "normalized_goal": "入力テキストを分析し、要約を検証済みの出力型で返す。",
+  "atomic_requirements": [
+    {"id":"REQ-001","text":"入力テキストを分析する","priority":"must","source":"explicit"},
+    {"id":"REQ-002","text":"分析結果を要約する","priority":"must","source":"explicit"},
+    {"id":"REQ-003","text":"最終要約の型を検証する","priority":"must","source":"inferred"}
+  ],
+  "known_constraints": [],
+  "assumptions": [
+    {"id":"ASM-001","statement":"入力はUTF-8テキストとして扱える","confidence":0.95,"impact":"low","source":"inferred"}
+  ],
+  "open_questions": [],
+  "acceptance_criteria": [
+    {"id":"AC-001","text":"必要な能力が順序どおりのプランに含まれる"},
+    {"id":"AC-002","text":"最終出力型 validated_summary が生成候補に含まれる"}
+  ],
+  "routing": {
+    "input_types": ["text"],
+    "required_capabilities": ["analyze", "summarize", "validate"],
+    "output_contract": {"required_types":["validated_summary"]},
+    "risk_level":"low",
+    "policy":{"forbidden_execution_modes":["external_api"],"approval_required":false,"approval_granted":false}
+  },
+  "decision":{"status":"READY","reason":"All blocking conditions are resolved or absent."}
+}
