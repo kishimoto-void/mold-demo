@@ -1,1 +1,0 @@
-"""Generic Middle Mold package."""
