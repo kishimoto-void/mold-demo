@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:top-mold:profile-record:v0.2.1",
+  "title": "Top Mold Profile Record v0.2.1 (suggested portable shape)",
+  "type": "object",
+  "required": [
+    "record_id",
+    "domain",
+    "record_type",
+    "content",
+    "source",
+    "observed_at",
+    "confidence",
+    "scope",
+    "sensitivity",
+    "retention_class",
+    "status"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "domain": {
+      "type": "string",
+      "minLength": 1
+    },
+    "record_type": {
+      "enum": [
+        "explicit_preference",
+        "interaction_preference",
+        "manual_setting",
+        "observed_hypothesis",
+        "task_state",
+        "external_fact",
+        "temporary_context",
+        "transient",
+        "joke",
+        "banter",
+        "one_off_topic"
+      ]
+    },
+    "content": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1
+    },
+    "observed_at": {
+      "type": "string",
+      "minLength": 1,
+      "description": "ISO 8601 timestamp recommended"
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "user_confirmed": {
+      "type": "boolean",
+      "default": false
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sensitivity": {
+      "enum": [
+        "none",
+        "low",
+        "sensitive"
+      ]
+    },
+    "retention_class": {
+      "enum": [
+        "session_only",
+        "task_limited",
+        "durable_by_confirmation",
+        "hypothesis_review",
+        "valid_until_date",
+        "do_not_persist"
+      ]
+    },
+    "valid_until": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "enum": [
+        "candidate",
+        "active",
+        "inactive",
+        "superseded",
+        "deleted"
+      ]
+    },
+    "evidence_count": {
+      "type": "integer",
+      "minimum": 0,
+      "default": 1
+    },
+    "supersedes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    },
+    "independent_context_count": {
+      "type": "integer",
+      "minimum": 0,
+      "default": 0,
+      "description": "Count of materially independent contexts; not just repeated mentions or duplicated sources"
+    },
+    "clear_purpose": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether a clear purpose has been established for sensitive retention"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,30 @@
+{
+  "profile_id": "personal-hub-example-001",
+  "intended_use": "Illustrative template only; not a default personality or real user profile",
+  "domain_overrides": {
+    "shopping": {
+      "enabled": true,
+      "depth": 35,
+      "proactiveness": 25
+    },
+    "learning": {
+      "enabled": true,
+      "depth": 20,
+      "proactiveness": 15
+    },
+    "events_entertainment": {
+      "enabled": true,
+      "depth": 25,
+      "proactiveness": 30
+    }
+  },
+  "memory_update_preferences": {
+    "persist_one_off_jokes": false,
+    "ask_before_persisting_inferred_preferences": true,
+    "sensitive_data_default": "do_not_persist_without_explicit_permission_and_clear_purpose",
+    "decay_reduces_active_priority_not_deletion": true,
+    "observed_hypothesis_requires": "At least 3 relevant observations across at least 2 independent contexts; sensitive inferred traits are not persisted"
+  },
+  "prompt_generation": "on_demand_only",
+  "notes": "Example values only. Each person may change or delete any value. No real preferences are included."
+}
