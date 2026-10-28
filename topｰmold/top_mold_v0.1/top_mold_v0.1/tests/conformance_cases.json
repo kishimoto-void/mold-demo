@@ -1,0 +1,17 @@
+[
+  {"id":"C01","input":"このファイルを作成して","primary":"work"},
+  {"id":"C02","input":"厳密にテストして","primary":"verify"},
+  {"id":"C03","input":"全体を設計して","primary":"design"},
+  {"id":"C04","input":"最新情報を調べて","primary":"research"},
+  {"id":"C05","input":"今日は雑談しよう","primary":"chat"},
+  {"id":"C06","input":"数学のテスト、設計、調査について書かれたメモを読んだ。","primary":"chat","secondary":[]},
+  {"id":"C07","input":"トップモールドのファイル一式を作成して、厳密にテストを追加して","contains_modes":["work","verify"]},
+  {"id":"C08","input":"この案を厳密にテストして、ChatGPT的にどう思う？","primary":"verify","free_opinion":true},
+  {"id":"C09","input":"専門家モードで設計して","primary":"design","depth":"expert"},
+  {"id":"C10","input":"要点だけで設計して","primary":"design","depth":"concise"},
+  {"id":"C11","input":"設計して、成果物はZIPにして","primary":"design","output_contract":"zip"},
+  {"id":"C12","input":"この内容をZIPだけで納品して。余計な説明なし","output_contract":"zip","output_only":true},
+  {"id":"C13","input":"JSONで出力して検証して","primary":"verify","output_contract":"json"},
+  {"id":"C14","input":"モールドの設計について雑談しよう","primary":"chat"},
+  {"id":"C15","input":"これは数学のテストです","primary":"chat","secondary":[]}
+]
